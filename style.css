@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+nav span ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin-right: 15px;
+    font-weight: 700;
+   
+}
+nav span ul li a:hover{
+   color: #ff5200;
+   transition: 00.1s;
+    
+}
+nav span ul {
+    list-style: none;
+    display: flex;  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+.login-form input, button{
+    font-size: 1.3em;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+.login-form button{
+    background-color: #ff5200;
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 4px;
+    border: 0;
+}
+.login-form button:hover{
+    background-color: #db4500;
+    transition: 0.1s;
+}
+
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2.5em repeat(5, 1fr);
+    grid-gap: 1em;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.date, .day{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.day{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    background-color: thistle;
+}
+.other-month{
+    background-color: lightgray;
+}
+#month-name{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -50px;
+    padding-top: 180px;
+}
+.cal-wrap{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 80px;
+    
+}
+.cal-con{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.photo-frame{
+    width: 400px;
+    height: 250px;
+    border: 3px solid lightgreen;
+    border-radius: 12px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+}
+.photo img{
+    width: 100%;
+    border-radius: 12px;
+}
+.photo-detail p{
+    color: wheat;
+}
+.photo-detail{
+    position: absolute;
+    width: 400px;
+    top: 0%;
+    padding-left: 1.3%;
+    display: none;
+    background-color: rgba(153, 205, 50, 0.315);
+    padding-bottom: 60px;
+    border-radius: 12px;
+    border: 0;
+    
+}
+.photo-detail h3{
+    text-align: center;
+    background-color: rgba(24, 24, 24, 0.37);
+    margin-right: 10px;
+    padding: 4px;
+    color: whitesmoke;
+    font-weight: 700;
+    border-radius: 12px;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+   margin-left: 2%;
+    padding-bottom: 80px;
+}
+.photo-frame:hover .photo img{ 
+    transform: scale(1.8) rotate(-15deg) skew(-5deg);
+    transition: transform 2s ease-in-out;
+}
